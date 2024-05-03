@@ -28,10 +28,12 @@ df, processed_file_path = process_file("txt.txt")
 st.subheader("Processed Text")
 st.dataframe(df)  # Display the DataFrame in a nice format
 
-with open(processed_file_path, "rb") as file:
-    st.download_button(
-        label="Download Processed File",
-        data=file,
-        file_name="processed_file.txt",
-        mime='text/plain'
-    )
+
+#with open(processed_file_path, "rb") as file:
+#   st.download_button(
+#        label="Download Processed File",
+#        data=file,
+#        file_name="processed_file.txt",
+#        mime='text/plain'
+#    )
+
