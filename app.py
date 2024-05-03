@@ -28,11 +28,11 @@ if uploaded_file is not None:
     st.subheader("Processed Text")
     st.dataframe(df)
 
-    # Preparar el archivo procesado para descargar
-    processed_content = '\n'.join(df['Words'])
-    st.download_button(
-        label="Download Processed File",
-        data=processed_content,
-        file_name="processed_file.txt",
-        mime='text/plain'
-    )
+    # Preparar el archivo procesado para descargar (Opción comentada)
+    # processed_content = '\n'.join(df['Words'])
+    # st.download_button(
+    #     label="Download Processed File",
+    #     data=processed_content,
+    #     file_name="processed_file.txt",
+    #     mime='text/plain'
+    # )
